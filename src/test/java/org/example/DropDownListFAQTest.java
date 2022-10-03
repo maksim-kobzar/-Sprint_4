@@ -1,4 +1,5 @@
 package org.example;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.example.DropDownListFAQ;
 import org.junit.After;
@@ -23,67 +24,66 @@ public class DropDownListFAQTest {
         //driver = new FirefoxDriver();
         driver.get("https://qa-scooter.praktikum-services.ru/");
         driver.findElement(By.id("rcc-confirm-button")).click();
-
     }
 
     @Test
-    public void accordion_1(){
-        DropDownListFAQ objDropDownListFAQ = new DropDownListFAQ (driver);
-        objDropDownListFAQ.clickAccordionButton_1();
-        objDropDownListFAQ.textComparison_1();
+    public void accordion_1() {
+        DropDownListFAQ objDropDownListFAQ = new DropDownListFAQ(driver);
+        objDropDownListFAQ.clickAccordionButton1();
+        objDropDownListFAQ.textComparison1();
     }
 
     @Test
-    public void accordion_2(){
-        DropDownListFAQ objDropDownListFAQ = new DropDownListFAQ (driver);
-        objDropDownListFAQ.clickAccordionButton_2();
-        objDropDownListFAQ.textComparison_2();
+    public void accordion_2() {
+        DropDownListFAQ objDropDownListFAQ = new DropDownListFAQ(driver);
+        objDropDownListFAQ.clickAccordionButton2();
+        objDropDownListFAQ.textComparison2();
     }
 
     @Test
-    public void accordion_3(){
-        DropDownListFAQ objDropDownListFAQ = new DropDownListFAQ (driver);
-        objDropDownListFAQ.clickAccordionButton_3();
-        objDropDownListFAQ.textComparison_3();
+    public void accordion_3() {
+        DropDownListFAQ objDropDownListFAQ = new DropDownListFAQ(driver);
+        objDropDownListFAQ.clickAccordionButton3();
+        objDropDownListFAQ.textComparison3();
     }
 
     @Test
-    public void accordion_4(){
-        DropDownListFAQ objDropDownListFAQ = new DropDownListFAQ (driver);
-        objDropDownListFAQ.clickAccordionButton_4();
-        objDropDownListFAQ.textComparison_4();
+    public void accordion_4() {
+        DropDownListFAQ objDropDownListFAQ = new DropDownListFAQ(driver);
+        objDropDownListFAQ.clickAccordionButton4();
+        objDropDownListFAQ.textComparison4();
     }
 
     @Test
-    public void accordion_5(){
-        DropDownListFAQ objDropDownListFAQ = new DropDownListFAQ (driver);
-        objDropDownListFAQ.clickAccordionButton_5();
-        objDropDownListFAQ.textComparison_5();
+    public void accordion_5() {
+        DropDownListFAQ objDropDownListFAQ = new DropDownListFAQ(driver);
+        objDropDownListFAQ.clickAccordionButton5();
+        objDropDownListFAQ.textComparison5();
     }
 
     @Test
-    public void accordion_6(){
-        DropDownListFAQ objDropDownListFAQ = new DropDownListFAQ (driver);
-        objDropDownListFAQ.clickAccordionButton_6();
-        objDropDownListFAQ.textComparison_6();
+    public void accordion_6() {
+        DropDownListFAQ objDropDownListFAQ = new DropDownListFAQ(driver);
+        objDropDownListFAQ.clickAccordionButton6();
+        objDropDownListFAQ.textComparison6();
     }
 
     @Test
-    public void accordion_7(){
-        DropDownListFAQ objDropDownListFAQ = new DropDownListFAQ (driver);
-        objDropDownListFAQ.clickAccordionButton_7();
-        objDropDownListFAQ.textComparison_7();
+    public void accordion_7() {
+        DropDownListFAQ objDropDownListFAQ = new DropDownListFAQ(driver);
+        objDropDownListFAQ.clickAccordionButton7();
+        objDropDownListFAQ.textComparison7();
     }
 
     @Test
-    public void accordion_8(){
-        DropDownListFAQ objDropDownListFAQ = new DropDownListFAQ (driver);
-        objDropDownListFAQ.clickAccordionButton_8();
-        objDropDownListFAQ.textComparison_8();
+    public void accordion_8() {
+        DropDownListFAQ objDropDownListFAQ = new DropDownListFAQ(driver);
+        objDropDownListFAQ.clickAccordionButton8();
+        objDropDownListFAQ.textComparison8();
     }
 
     @After
-    public void cleanUp(){
+    public void cleanUp() {
         driver.quit();
     }
 }

@@ -8,51 +8,44 @@ import static org.junit.Assert.assertEquals;
 public class DropDownListFAQ {
     private WebDriver driver;
     //Раскрытие пунктов меню
-    private By accordionButton_1 = By.id("accordion__heading-0");
-    private By accordionButton_2 = By.id("accordion__heading-1");
-    private By accordionButton_3 = By.id("accordion__heading-2");
-    private By accordionButton_4 = By.id("accordion__heading-3");
-    private By accordionButton_5 = By.id("accordion__heading-4");
-    private By accordionButton_6 = By.id("accordion__heading-5");
-    private By accordionButton_7 = By.id("accordion__heading-6");
-    private By accordionButton_8 = By.id("accordion__heading-7");
+    private By accordionButton1 = By.id("accordion__heading-0");
+    private By accordionButton2 = By.id("accordion__heading-1");
+    private By accordionButton3 = By.id("accordion__heading-2");
+    private By accordionButton4 = By.id("accordion__heading-3");
+    private By accordionButton5 = By.id("accordion__heading-4");
+    private By accordionButton6 = By.id("accordion__heading-5");
+    private By accordionButton7 = By.id("accordion__heading-6");
+    private By accordionButton8 = By.id("accordion__heading-7");
 
     public DropDownListFAQ(WebDriver driver) {
         this.driver = driver;
     }
 
 
-    public void clickAccordionButton_1 (){
-        driver.findElement(accordionButton_1).click();
+    public void clickAccordionButton1() {
+        driver.findElement(accordionButton1).click();
     }
 
-    public void clickAccordionButton_2 (){
-        driver.findElement(accordionButton_2).click();
-    }
+    public void clickAccordionButton2() {
+        driver.findElement(accordionButton2).click();}
 
-    public void clickAccordionButton_3 (){
-        driver.findElement(accordionButton_3).click();
-    }
+    public void clickAccordionButton3() {
+        driver.findElement(accordionButton3).click();}
 
-    public void clickAccordionButton_4 (){
-        driver.findElement(accordionButton_4).click();
-    }
+    public void clickAccordionButton4() {
+        driver.findElement(accordionButton4).click();}
 
-    public void clickAccordionButton_5 (){
-        driver.findElement(accordionButton_5).click();
-    }
+    public void clickAccordionButton5() {
+        driver.findElement(accordionButton5).click();}
 
-    public void clickAccordionButton_6 (){
-        driver.findElement(accordionButton_6).click();
-    }
+    public void clickAccordionButton6() {
+        driver.findElement(accordionButton6).click();}
 
-    public void clickAccordionButton_7 (){
-        driver.findElement(accordionButton_7).click();
-    }
+    public void clickAccordionButton7() {
+        driver.findElement(accordionButton7).click();}
 
-    public void clickAccordionButton_8 (){
-        driver.findElement(accordionButton_8).click();
-    }
+    public void clickAccordionButton8() {
+        driver.findElement(accordionButton8).click();}
 
     String text1 = "Сутки — 400 рублей. Оплата курьеру — наличными или картой.";
     String text2 = "Пока что у нас так: один заказ — один самокат. Если хотите покататься с друзьями, можете просто сделать несколько заказов — один за другим.";
@@ -64,52 +57,44 @@ public class DropDownListFAQ {
     String text8 = "Да, обязательно. Всем самокатов! И Москве, и Московской области.";
 
     // Сравнение текста
-    private By textAccordion_1 = By.xpath("//div[@aria-labelledby=\"accordion__heading-0\"]/p");
-    private By textAccordion_2 = By.xpath("//div[@aria-labelledby=\"accordion__heading-1\"]/p");
-    private By textAccordion_3 = By.xpath("//div[@aria-labelledby=\"accordion__heading-2\"]/p");
-    private By textAccordion_4 = By.xpath("//div[@aria-labelledby=\"accordion__heading-3\"]/p");
-    private By textAccordion_5 = By.xpath("//div[@aria-labelledby=\"accordion__heading-4\"]/p");
-    private By textAccordion_6 = By.xpath("//div[@aria-labelledby=\"accordion__heading-5\"]/p");
-    private By textAccordion_7 = By.xpath("//div[@aria-labelledby=\"accordion__heading-6\"]/p");
-    private By textAccordion_8 = By.xpath("//div[@aria-labelledby=\"accordion__heading-7\"]/p");
+    private By textAccordion1 = By.xpath("//div[@aria-labelledby=\"accordion__heading-0\"]/p");
+    private By textAccordion2 = By.xpath("//div[@aria-labelledby=\"accordion__heading-1\"]/p");
+    private By textAccordion3 = By.xpath("//div[@aria-labelledby=\"accordion__heading-2\"]/p");
+    private By textAccordion4 = By.xpath("//div[@aria-labelledby=\"accordion__heading-3\"]/p");
+    private By textAccordion5 = By.xpath("//div[@aria-labelledby=\"accordion__heading-4\"]/p");
+    private By textAccordion6 = By.xpath("//div[@aria-labelledby=\"accordion__heading-5\"]/p");
+    private By textAccordion7 = By.xpath("//div[@aria-labelledby=\"accordion__heading-6\"]/p");
+    private By textAccordion8 = By.xpath("//div[@aria-labelledby=\"accordion__heading-7\"]/p");
 
-    public void textComparison_1 (){
-        String actual = driver.findElement(textAccordion_1).getText();
-        assertEquals("Ошибка - не правильный текст", text1, actual);
-    }
+    public void textComparison1() {
+        String actual = driver.findElement(textAccordion1).getText();
+        assertEquals("Ошибка - не правильный текст", text1, actual);}
 
-    public void textComparison_2 (){
-        String actual = driver.findElement(textAccordion_2).getText();
-        assertEquals("Ошибка - не правильный текст", text2, actual);
-    }
+    public void textComparison2() {
+        String actual = driver.findElement(textAccordion2).getText();
+        assertEquals("Ошибка - не правильный текст", text2, actual);}
 
-    public void textComparison_3 (){
-        String actual = driver.findElement(textAccordion_3).getText();
-        assertEquals("Ошибка - не правильный текст", text3, actual);
-    }
+    public void textComparison3() {
+        String actual = driver.findElement(textAccordion3).getText();
+        assertEquals("Ошибка - не правильный текст", text3, actual);}
 
-    public void textComparison_4 (){
-        String actual = driver.findElement(textAccordion_4).getText();
-        assertEquals("Ошибка - не правильный текст", text4, actual);
-    }
+    public void textComparison4() {
+        String actual = driver.findElement(textAccordion4).getText();
+        assertEquals("Ошибка - не правильный текст", text4, actual);}
 
-    public void textComparison_5 (){
-        String actual = driver.findElement(textAccordion_5).getText();
-        assertEquals("Ошибка - не правильный текст", text5, actual);
-    }
+    public void textComparison5() {
+        String actual = driver.findElement(textAccordion5).getText();
+        assertEquals("Ошибка - не правильный текст", text5, actual);}
 
-    public void textComparison_6 (){
-        String actual = driver.findElement(textAccordion_6).getText();
-        assertEquals("Ошибка - не правильный текст", text6, actual);
-    }
+    public void textComparison6() {
+        String actual = driver.findElement(textAccordion6).getText();
+        assertEquals("Ошибка - не правильный текст", text6, actual);}
 
-    public void textComparison_7 (){
-        String actual = driver.findElement(textAccordion_7).getText();
-        assertEquals("Ошибка - не правильный текст", text7, actual);
-    }
+    public void textComparison7() {
+        String actual = driver.findElement(textAccordion7).getText();
+        assertEquals("Ошибка - не правильный текст", text7, actual);}
 
-    public void textComparison_8 (){
-        String actual = driver.findElement(textAccordion_8).getText();
-        assertEquals("Ошибка - не правильный текст", text8, actual);
-    }
+    public void textComparison8() {
+        String actual = driver.findElement(textAccordion8).getText();
+        assertEquals("Ошибка - не правильный текст", text8, actual);}
 }
